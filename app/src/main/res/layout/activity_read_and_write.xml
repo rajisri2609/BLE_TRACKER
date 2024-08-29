@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ffffff">
+
+    <!-- Title: Beacon Registration -->
+
+    <!-- RadioGroup for Read and Write -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:paddingBottom="50dp"
+        android:text="Read/Write Operation"
+        android:textColor="#0066ff"
+        android:textSize="32sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="270dp">
+
+        <!-- RadioButton for Read -->
+        <RadioButton
+            android:id="@+id/radioButtonRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black"
+            android:text="Read"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- RadioButton for Write -->
+        <RadioButton
+            android:id="@+id/radioButtonWrite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/black"
+            android:text="Write"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <!-- Description Text: Scan to register nearby devices -->
+
+    <!-- Start Scan Button -->
+
+    <TextView
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="40dp"
+        android:text="Scan to find nearby beacon devices"
+        android:textColor="#0066ff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnStartScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:text="Start Scan"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

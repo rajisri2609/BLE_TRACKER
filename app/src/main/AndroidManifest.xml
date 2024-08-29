@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <!--  Bluetooth permissions  -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation"/>
+    <application android:allowBackup="true" android:dataExtractionRules="@xml/data_extraction_rules" android:fullBackupContent="@xml/backup_rules" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/Theme.MyApplication" tools:targetApi="31">
+        <!--  Main Activity  -->
+        <activity android:exported="true" android:name=".MainActivity" android:theme="@style/Theme.AppCompat">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!--  Scan Activity  -->
+        <activity android:exported="true" android:name=".ScanActivity"
+                  android:theme="@style/Theme.AppCompat"/>
+        <activity android:exported="true" android:name=".DashboardActivity"
+                  android:theme="@style/Theme.AppCompat"/>
+        <activity android:exported="true" android:name=".DashboardActivityMain"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity android:exported="true" android:name=".TrackingAndAuditingActivity"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity android:exported="true" android:name=".AuditingActivityList"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity android:exported="true" android:name=".ReadAndWriteActivity"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity android:exported="true" android:name=".ReadDevicesActivity"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity android:exported="true" android:name=".DeviceDetailsActivity"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity android:exported="true" android:name=".WriteDevicesList"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity android:exported="true" android:name=".WriteDetailsActivity"
+            android:theme="@style/Theme.AppCompat"/>
+    </application>
+</manifest>

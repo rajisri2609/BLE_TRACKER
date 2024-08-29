@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BLE Tracking</string>
+    <string name="login_title">Login to IATM</string>
+    <string name="login_button">Login</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_error_message">Invalid username or password</string>
+</resources>

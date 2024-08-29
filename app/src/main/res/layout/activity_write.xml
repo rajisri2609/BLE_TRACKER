@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <!-- Home Icon -->
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Home"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+    <!-- TextView for displaying Device ID -->
+    <TextView
+        android:id="@+id/deviceIdTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="#0066ff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Device ID: Unknown" />
+
+    <!-- EditText for entering data to write -->
+    <EditText
+        android:id="@+id/dataEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deviceIdTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter data to write"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:background="@drawable/info_box_background"
+        android:padding="12dp"/>
+
+    <!-- Box for Characteristics TextView -->
+    <LinearLayout
+        android:id="@+id/characteristicsBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dataEditText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        >
+
+
+
+    </LinearLayout>
+
+    <!-- Button to initiate write operation -->
+    <Button
+        android:id="@+id/writeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/characteristicsBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Write"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:textSize="18sp" />
+
+</RelativeLayout>
